@@ -120,44 +120,7 @@ class SelectViewController: UIViewController,UITableViewDelegate,UITableViewData
         let url = URL(string: urlString)
         
         
-        downLoadMusicURL(url: url!)
-        
         moveToSelect()
-        
-    }
-    
-    
-    func downLoadMusicURL(url: URL){
-        
-        var downloadTask:URLSessionDownloadTask
-        downloadTask = URLSession.shared.downloadTask(with: url, completionHandler: { (url, response, error) in
-            
-            //再生
-            //self.play(url: url!)
-            
-            
-            
-        })
-        
-        downloadTask.resume()
-        
-    }
-    
-    func play(url:URL){
-        
-        
-        do {
-            self.player = try AVAudioPlayer(contentsOf: url)
-            player?.prepareToPlay()
-            player?.volume = 1.0
-            player?.play()
-            
-            
-        } catch let error as NSError {
-            
-            print(error.localizedDescription)
-            
-        }
         
     }
     
