@@ -115,10 +115,18 @@ class SearchViewController: UIViewController,UITextFieldDelegate {
                         artWorkUrl?.replaceSubrange(range, with: "320x320bb")
                     }
                     
-                    self.imageStringArray.append(artWorkUrl!)
-                    self.previewURLArray.append(previewURL!)
-                    self.artistNameArray.append(artistName!)
-                    self.musicNameArray.append(trackCensoredName!)
+                    if artWorkUrl != nil{
+                        self.imageStringArray.append(artWorkUrl!)
+                    }
+                    if previewURL != nil{
+                        self.previewURLArray.append(previewURL!)
+                    }
+                    if artistName != nil{
+                        self.artistNameArray.append(artistName!)
+                    }
+                    if trackCensoredName != nil{
+                        self.musicNameArray.append(trackCensoredName!)
+                    }
                     
                     if self.musicNameArray.count == resultCount{
                         
