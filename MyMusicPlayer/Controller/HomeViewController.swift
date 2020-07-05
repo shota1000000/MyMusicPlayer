@@ -45,7 +45,7 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        print("!!!!!!!!!!!!")
+        //print("!!!!!!!!!!!!")
         
         //Firebaseのデータに更新があった場合，musicNameArrayなどの中身を編集したい
         artistNameArray.removeAll()
@@ -63,7 +63,7 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         indicatorView.backgroundColor = .black
         indicatorView.startAnimating()
         view.addSubview(indicatorView)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
             indicatorView.stopAnimating()
             indicatorView.removeFromSuperview()
         }
@@ -88,32 +88,32 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
                 
                 if let imageName = snap!["image"] as? String{
                     self.imageStringArray.append(imageName)
-                    print(self.imageStringArray)
+                    //print(self.imageStringArray)
                 }
                 
                 if let artistName = snap!["artist"] as? String{
                     self.artistNameArray.append(artistName)
-                    print(self.artistNameArray)
+                    //print(self.artistNameArray)
                 }
                 
                 if let musicName = snap!["music"] as? String{
                     self.musicNameArray.append(musicName)
-                    print(self.musicNameArray)
+                    //print(self.musicNameArray)
                 }
                 
                 if let previewName = snap!["preview"] as? String{
                     self.previewURLArray.append(previewName)
-                    print(self.previewURLArray)
+                    //print(self.previewURLArray)
                 }
                 
                 if let message = snap!["message"] as? String{
                     self.messageStringArray.append(message)
-                    print(self.messageStringArray)
+                    //print(self.messageStringArray)
                 }
                 
                 if let autoID = snap!["autoID"] as? String{
                     self.autoIDArray.append(autoID)
-                    print(self.autoIDArray)
+                    //print(self.autoIDArray)
                 }
                 
                 self.selectTableView.reloadData()
