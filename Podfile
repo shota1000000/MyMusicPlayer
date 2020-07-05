@@ -27,5 +27,6 @@ target 'MyMusicPlayer' do
   pod 'ViewAnimator'
   pod 'Kanna'
   pod 'SwiftSoup'
+  pod 'NVActivityIndicatorView'
 
 end

@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import SDWebImage
 import AVFoundation
+import NVActivityIndicatorView
 
 class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
@@ -55,6 +56,17 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         autoIDArray.removeAll()
         loadDataFirebase()
         
+        let indicatorView = NVActivityIndicatorView(frame: view.bounds)
+        indicatorView.type = .orbit
+        indicatorView.color = .darkGray
+        indicatorView.alpha = 0.7
+        indicatorView.backgroundColor = .black
+        indicatorView.startAnimating()
+        view.addSubview(indicatorView)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+            indicatorView.stopAnimating()
+            indicatorView.removeFromSuperview()
+        }
         
     }
     
