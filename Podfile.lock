@@ -355,6 +355,9 @@ PODS:
     - nanopb/encode (= 1.30905.0)
   - nanopb/decode (1.30905.0)
   - nanopb/encode (1.30905.0)
+  - NVActivityIndicatorView (5.0.0):
+    - NVActivityIndicatorView/Base (= 5.0.0)
+  - NVActivityIndicatorView/Base (5.0.0)
   - PKHUD (5.3.0)
   - PromisesObjC (1.2.8)
   - SDWebImage (5.7.3):
@@ -379,6 +382,7 @@ DEPENDENCIES:
   - FirebaseFirestoreSwift
   - Kanna
   - lottie-ios
+  - NVActivityIndicatorView
   - PKHUD (~> 5.0)
   - SDWebImage (~> 5.0)
   - SPStorkController
@@ -416,6 +420,7 @@ SPEC REPOS:
     - leveldb-library
     - lottie-ios
     - nanopb
+    - NVActivityIndicatorView
     - PKHUD
     - PromisesObjC
     - SDWebImage
@@ -453,6 +458,7 @@ SPEC CHECKSUMS:
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   lottie-ios: 48fac6be217c76937e36e340e2d09cf7b10b7f5f
   nanopb: c43f40fadfe79e8b8db116583945847910cbabc9
+  NVActivityIndicatorView: f109ed069924ac1b4adbc1ae9cfaeac0be1d6c2c
   PKHUD: 98f3e4bc904b9c916f1c5bb6d765365b5357291b
   PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
   SDWebImage: 97351f6582ceca541ea294ba66a1fcb342a331c2
@@ -462,6 +468,6 @@ SPEC CHECKSUMS:
   VerticalCardSwiper: 41c8c0d8d87511ec269347f5671386acf66cd31a
   ViewAnimator: 5af1c6f3b310f012bf081259c43717aa54fbae73
 
-PODFILE CHECKSUM: 25b9b91714dacd787fdf647a9b7091bed758792c
+PODFILE CHECKSUM: 57f142023168f6ef967eac71eb9f8a1bef5987d9
 
 COCOAPODS: 1.9.1
