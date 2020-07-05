@@ -468,30 +468,30 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P1y-uB-kl1">
-                                <rect key="frame" x="57" y="380" width="300" height="90"/>
+                                <rect key="frame" x="0.0" y="380" width="414" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="0qf-KN-rBU"/>
-                                    <constraint firstAttribute="width" constant="300" id="40N-vR-poD"/>
+                                    <constraint firstAttribute="width" constant="414" id="2Sp-Ux-3Gh"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qYc-Cz-ylB">
-                                <rect key="frame" x="57" y="490" width="300" height="45"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qYc-Cz-ylB">
+                                <rect key="frame" x="0.0" y="490" width="414" height="90"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="OcN-u6-cRy"/>
-                                    <constraint firstAttribute="width" constant="300" id="Ye7-cD-spX"/>
+                                    <constraint firstAttribute="width" constant="414" id="Umr-P9-2XF"/>
+                                    <constraint firstAttribute="height" constant="90" id="mSg-gO-av5"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AmV-dJ-u3u">
-                                <rect key="frame" x="57" y="555" width="300" height="45"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AmV-dJ-u3u">
+                                <rect key="frame" x="0.0" y="600" width="414" height="90"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="LBk-Ar-qhI"/>
-                                    <constraint firstAttribute="width" constant="300" id="fIl-UI-bhD"/>
+                                    <constraint firstAttribute="height" constant="90" id="Ldn-7R-dnB"/>
+                                    <constraint firstAttribute="width" constant="414" id="uux-PZ-Pwp"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
