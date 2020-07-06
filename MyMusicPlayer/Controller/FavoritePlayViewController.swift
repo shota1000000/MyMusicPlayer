@@ -37,6 +37,8 @@ class FavoritePlayViewController: UIViewController,AVAudioPlayerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.overrideUserInterfaceStyle = .dark
+        
         artistImageView.sd_setImage(with: URL(string: imageString), placeholderImage: UIImage(named: "noImage"), options: .continueInBackground, context: nil, progress: nil, completed: nil)
         
         musicNameLabel.text = musicName
