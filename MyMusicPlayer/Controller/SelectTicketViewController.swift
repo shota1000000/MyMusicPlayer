@@ -33,6 +33,8 @@ class SelectTicketViewController: UIViewController,UITableViewDelegate,UITableVi
         selectTicketTableView.delegate = self
         selectTicketTableView.dataSource = self
         
+        self.overrideUserInterfaceStyle = .dark
+        
         getTicketInfo()
     }
     

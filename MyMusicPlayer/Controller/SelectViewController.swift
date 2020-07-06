@@ -39,6 +39,7 @@ class SelectViewController: UIViewController,UITableViewDelegate,UITableViewData
         selectTableView.delegate = self
         selectTableView.dataSource = self
         
+        self.overrideUserInterfaceStyle = .dark
     }
     
     
@@ -160,7 +161,7 @@ class SelectViewController: UIViewController,UITableViewDelegate,UITableViewData
                 style: UIAlertAction.Style.default) { _ in
                     if (messageTextField?.text) != nil {
                         
-                        //OKが押された時の処理（Firebaseにデータ登録）
+                        //Sendが押された時の処理（Firebaseにデータ登録）
                         //KeyValue型の配列を用意
                         let user = ["image":self.imageStringArray[row!],
                                     "music":self.musicNameArray[row!],

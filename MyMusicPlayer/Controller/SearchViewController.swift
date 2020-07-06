@@ -36,6 +36,8 @@ class SearchViewController: UIViewController,UITextFieldDelegate {
         
         self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
         
+        self.overrideUserInterfaceStyle = .dark
+        
         let twitterURL = URL(string: "https://twitter.com/search?q=%E9%9F%B3%E6%A5%BD%E3%83%A9%E3%82%A4%E3%83%96%E6%83%85%E5%A0%B1&src=typed_query")
         let request = URLRequest(url: twitterURL!)
         webView.load(request)

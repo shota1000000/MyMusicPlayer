@@ -42,6 +42,8 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         selectTableView.dataSource = self
         
         self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+        
+        self.overrideUserInterfaceStyle = .dark
     }
     
     override func viewWillAppear(_ animated: Bool) {
