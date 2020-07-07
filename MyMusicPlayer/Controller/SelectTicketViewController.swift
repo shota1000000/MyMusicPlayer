@@ -77,44 +77,39 @@ class SelectTicketViewController: UIViewController,UITableViewDelegate,UITableVi
             }catch let error{
                 print("Error: \(error)")
             }
-            
             self.getTicketImage()
         }
-        
-        
         
     }
     
     func getTicketImage(){
         
-        
         for count in 0..<liveImageURLArray.count{
             
             AF.request(liveImageURLArray[count]).responseString{response in
-            guard let html = response.value else{
-                return
-            }
+                guard let html = response.value else{
+                    return
+                }
            
-            do{
-                let doc: Document = try SwiftSoup.parse(html)
+                do{
+                    let doc: Document = try SwiftSoup.parse(html)
                     
-                let liveImagePath: Element = try doc.select("div.sow-image-container img.so-widget-image").get(1)
-                
-                let liveImage: String =  try liveImagePath.attr("src")
+                    if try! doc.select("div.sow-image-container img.so-widget-image").count == 2{
+                        let liveImagePath: Element = try! doc.select("div.sow-image-container img.so-widget-image").get(1)
+                        
+                        let liveImage: String =  try! liveImagePath.attr("src")
                     
-                self.liveImageArray.append(liveImage)
-                print(self.liveImageArray)
-                
-                self.selectTicketTableView.reloadData()
-                
-                
-            }catch let error{
-                print("Error: \(error)")
+                        self.liveImageArray.append(liveImage)
+                    }else{
+                        self.liveImageArray.append("noimage")
+                    }
+                    print(self.liveImageArray)
+                    
+                    self.selectTicketTableView.reloadData()
+                }catch let error{
+                    print("Error: \(error)")
+                }
             }
-        }
-       
-        
-        
         }
     }
     
@@ -156,21 +151,23 @@ class SelectTicketViewController: UIViewController,UITableViewDelegate,UITableVi
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return liveImageArray.count
+        return liveNameArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let cell = tableView.dequeueReusableCell(withIdentifier: "ticketCell", for: indexPath)
         
         let liveImageView = cell.contentView.viewWithTag(1) as! UIImageView
         let liveNameLabel = cell.contentView.viewWithTag(2) as! UILabel
         let liveDateLabel = cell.contentView.viewWithTag(3) as! UILabel
         
-        liveImageView.sd_setImage(with: URL(string: liveImageArray[indexPath.row]), placeholderImage: UIImage(named: "noImage"), options: .continueInBackground, context: nil, progress: nil, completed: nil)
+        if liveImageArray[safe: indexPath.row] != nil{
+        liveImageView.sd_setImage(with: URL(string: liveImageArray[indexPath.row]), placeholderImage: UIImage(named: "noimage"), options: .continueInBackground, context: nil, progress: nil, completed: nil)
+        }
         liveNameLabel.text = liveNameArray[indexPath.row]
         liveDateLabel.text = liveDateArray[indexPath.row]
         
+        print("aaaa")
         
         return cell
     }
@@ -186,4 +183,10 @@ class SelectTicketViewController: UIViewController,UITableViewDelegate,UITableVi
     }
     
 
+}
+
+extension Array {
+    subscript (safe index: Index) -> Element? {
+        return indices.contains(index) ? self[index] : nil
+    }
 }

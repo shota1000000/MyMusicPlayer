@@ -98,7 +98,7 @@ class SelectViewController: UIViewController,UITableViewDelegate,UITableViewData
         let artistNameLabel = cell.contentView.viewWithTag(3) as! UILabel
         
 
-        imageView.sd_setImage(with: URL(string: imageStringArray[indexPath.row]), placeholderImage: UIImage(named: "noImage"), options: .continueInBackground, context: nil, progress: nil, completed: nil)
+        imageView.sd_setImage(with: URL(string: imageStringArray[indexPath.row]), placeholderImage: UIImage(named: "noimage"), options: .continueInBackground, context: nil, progress: nil, completed: nil)
         musicNameLabel.text =  musicNameArray[indexPath.row]
         artistNameLabel.text = artistNameArray[indexPath.row]
         

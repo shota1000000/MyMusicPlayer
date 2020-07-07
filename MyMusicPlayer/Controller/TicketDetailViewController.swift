@@ -28,7 +28,7 @@ class TicketDetailViewController: UIViewController {
         
         self.overrideUserInterfaceStyle = .dark
         
-        liveImageView.sd_setImage(with: URL(string: image), placeholderImage: UIImage(named: "noImage"), options: .continueInBackground, context: nil, progress: nil, completed: nil)
+        liveImageView.sd_setImage(with: URL(string: image), placeholderImage: UIImage(named: "noimage"), options: .continueInBackground, context: nil, progress: nil, completed: nil)
         liveNameLabel.text = name
         livePlaceLabel.text = place
         liveDateLabel.text = date
