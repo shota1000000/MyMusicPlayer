@@ -39,7 +39,7 @@ class PlayViewController: UIViewController,AVAudioPlayerDelegate {
         
         self.overrideUserInterfaceStyle = .dark
         
-        artistImageView.sd_setImage(with: URL(string: imageString), placeholderImage: UIImage(named: "noImage"), options: .continueInBackground, context: nil, progress: nil, completed: nil)
+        artistImageView.sd_setImage(with: URL(string: imageString), placeholderImage: UIImage(named: "noimage"), options: .continueInBackground, context: nil, progress: nil, completed: nil)
         
         musicNameLabel.text = musicName
         artistNameLabel.text = artistName
