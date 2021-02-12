@@ -40,10 +40,6 @@ class SelectViewController: UIViewController,UITableViewDelegate,UITableViewData
         if segue.identifier == "playVC"{
             //インスタンス化
             let playVC = segue.destination as! PlayViewController
-            playVC.artistNameArray = self.artistNameArray
-            playVC.imageStringArray = self.imageStringArray
-            playVC.musicNameArray = self.musicNameArray
-            playVC.previewURLArray = self.previewURLArray
             playVC.artistName = self.artistName
             playVC.imageString = self.imageString
             playVC.musicName = self.musicName

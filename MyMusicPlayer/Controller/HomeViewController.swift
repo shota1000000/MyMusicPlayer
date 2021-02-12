@@ -38,7 +38,7 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        //Firebaseのデータに更新があった場合，musicNameArrayなどの中身を編集したい
+        //Firebaseのデータに更新があった場合，musicNameArrayなどの中身を編集
         artistNameArray.removeAll()
         musicNameArray.removeAll()
         previewURLArray.removeAll()
@@ -98,10 +98,6 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         if segue.identifier == "favoritePlayVC"{
             //インスタンス化
             let playVC = segue.destination as! FavoritePlayViewController
-            playVC.artistNameArray = self.artistNameArray
-            playVC.imageStringArray = self.imageStringArray
-            playVC.musicNameArray = self.musicNameArray
-            playVC.previewURLArray = self.previewURLArray
             playVC.artistName = self.artistName
             playVC.imageString = self.imageString
             playVC.musicName = self.musicName

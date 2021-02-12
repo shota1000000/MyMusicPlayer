@@ -36,10 +36,6 @@ class SearchViewController: UIViewController,UITextFieldDelegate {
     @IBAction func searchButton(_ sender: Any) {
         startParse(keyword: searchTextField.text!)
     }
-    
-    func moveToSelect(){
-        performSegue(withIdentifier: "selectVC", sender: nil)
-    }
     //値を持たせて遷移
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if searchTextField.text != nil && segue.identifier == "selectVC"{
@@ -99,8 +95,7 @@ class SearchViewController: UIViewController,UITextFieldDelegate {
                     
                     if self.musicNameArray.count == resultCount{
                         
-                        //選択画面へ遷移
-                        self.moveToSelect()
+                        self.performSegue(withIdentifier: "selectVC", sender: nil)
                     }
                 }
             case .failure(let error):
