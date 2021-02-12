@@ -87,10 +87,6 @@ class SelectTicketViewController: UIViewController,UITableViewDelegate,UITableVi
             }
         }
     }
-    
-    func moveToSelect(){
-        performSegue(withIdentifier: "ticketDetail", sender: nil)
-    }
     //値を持たせて遷移
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ticketDetail"{
@@ -135,7 +131,7 @@ class SelectTicketViewController: UIViewController,UITableViewDelegate,UITableVi
         name = liveNameArray[indexPath.row]
         date = liveDateArray[indexPath.row]
         place = livePlaceArray[indexPath.row]
-        moveToSelect()
+        performSegue(withIdentifier: "ticketDetail", sender: nil)
     }
 }
 

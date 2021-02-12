@@ -35,9 +35,6 @@ class SelectViewController: UIViewController,UITableViewDelegate,UITableViewData
         self.overrideUserInterfaceStyle = .dark
     }
     
-    func moveToSelect(){
-        performSegue(withIdentifier: "playVC", sender: nil)
-    }
     //値を持たせて遷移
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "playVC"{
@@ -88,7 +85,7 @@ class SelectViewController: UIViewController,UITableViewDelegate,UITableViewData
         let urlString = previewURLArray[indexPath.row]
         let url = URL(string: urlString)
         
-        moveToSelect()
+        performSegue(withIdentifier: "playVC", sender: nil)
     }
     
     @IBAction func playListButton(_ sender: Any) {
@@ -96,8 +93,6 @@ class SelectViewController: UIViewController,UITableViewDelegate,UITableViewData
         let btn = sender as! UIButton
         let cell = btn.superview?.superview as! UITableViewCell
         let row = selectTableView.indexPath(for: cell)?.row
-        //Optional(行数)と出る
-        print("\(row)")
         
         let childAutoID = ref.child("Users").childByAutoId()
         let autoID = childAutoID.key

@@ -93,9 +93,6 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         }
     }
     
-    func moveToSelect(){
-        performSegue(withIdentifier: "favoritePlayVC", sender: nil)
-    }
     //値を持たせて遷移
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "favoritePlayVC"{
@@ -164,7 +161,7 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         let urlString = previewURLArray[indexPath.row]
         let url = URL(string: urlString)
         
-        moveToSelect()
+        performSegue(withIdentifier: "favoritePlayVC", sender: nil)
     }
     
     @IBAction func openMessage(_ sender: Any) {
