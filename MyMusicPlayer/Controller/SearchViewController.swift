@@ -54,11 +54,6 @@ class SearchViewController: UIViewController,UITextFieldDelegate {
     
     func startParse(keyword:String){
         
-        artistNameArray = [String]()
-        musicNameArray = [String]()
-        previewURLArray = [String]()
-        imageStringArray = [String]()
-        
         let urlString = "https://itunes.apple.com/search?term=\(keyword)&country=jp"
         let encodeUrlString:String = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
         //AlamoFireを使ってリクエストを投げる
