@@ -28,9 +28,6 @@ class TicketViewController: UIViewController,UITextFieldDelegate {
         webView.load(request)
     }
     
-    func moveToSelect(){
-        performSegue(withIdentifier: "selectTicketVC", sender: nil)
-    }
     //値を持たせて遷移
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if searchTicketTextField.text != nil && segue.identifier == "selectTicketVC"{
@@ -41,7 +38,7 @@ class TicketViewController: UIViewController,UITextFieldDelegate {
     }
     
     @IBAction func searchTicketButton(_ sender: Any) {
-        moveToSelect()
+        performSegue(withIdentifier: "selectTicketVC", sender: nil)
     }
     //キーボードのReturnキーが押された時にキーボードを閉じる
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

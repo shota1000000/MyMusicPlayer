@@ -38,7 +38,7 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        //Firebaseのデータに更新があった場合，musicNameArrayなどの中身を編集したい
+        //Firebaseのデータに更新があった場合，musicNameArrayなどの中身を編集
         artistNameArray.removeAll()
         musicNameArray.removeAll()
         previewURLArray.removeAll()
@@ -93,18 +93,11 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         }
     }
     
-    func moveToSelect(){
-        performSegue(withIdentifier: "favoritePlayVC", sender: nil)
-    }
     //値を持たせて遷移
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "favoritePlayVC"{
             //インスタンス化
             let playVC = segue.destination as! FavoritePlayViewController
-            playVC.artistNameArray = self.artistNameArray
-            playVC.imageStringArray = self.imageStringArray
-            playVC.musicNameArray = self.musicNameArray
-            playVC.previewURLArray = self.previewURLArray
             playVC.artistName = self.artistName
             playVC.imageString = self.imageString
             playVC.musicName = self.musicName
@@ -164,7 +157,7 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         let urlString = previewURLArray[indexPath.row]
         let url = URL(string: urlString)
         
-        moveToSelect()
+        performSegue(withIdentifier: "favoritePlayVC", sender: nil)
     }
     
     @IBAction func openMessage(_ sender: Any) {

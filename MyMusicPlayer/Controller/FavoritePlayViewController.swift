@@ -20,10 +20,6 @@ class FavoritePlayViewController: UIViewController,AVAudioPlayerDelegate {
     var musicName = ""
     var previewURL = ""
     var imageString = ""
-    var artistNameArray = [String]()
-    var musicNameArray = [String]()
-    var previewURLArray = [String]()
-    var imageStringArray = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
