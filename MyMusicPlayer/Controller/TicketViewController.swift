@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Kanna
 import Alamofire
 import WebKit
 

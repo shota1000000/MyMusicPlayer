@@ -9,6 +9,7 @@
 import UIKit
 import Alamofire
 import SwiftSoup
+import SDWebImage
 
 class SelectTicketViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     var searchText = String()

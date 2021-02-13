@@ -8,7 +8,8 @@
 
 import UIKit
 import AVFoundation
-import SPStorkController
+import SDWebImage
+//import SPStorkController
 
 class PlayViewController: UIViewController,AVAudioPlayerDelegate {
     @IBOutlet weak var artistImageView: UIImageView!
