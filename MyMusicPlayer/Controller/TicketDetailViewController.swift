@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class TicketDetailViewController: UIViewController {
     @IBOutlet weak var liveImageView: UIImageView!

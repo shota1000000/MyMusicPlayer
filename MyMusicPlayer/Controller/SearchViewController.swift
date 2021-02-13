@@ -9,7 +9,6 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
-import SDWebImage
 import WebKit
 
 class SearchViewController: UIViewController,UITextFieldDelegate {

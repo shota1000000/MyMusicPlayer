@@ -10,8 +10,8 @@ import UIKit
 import Firebase
 import SDWebImage
 import AVFoundation
-import PKHUD
-import ViewAnimator
+//import PKHUD
+//import ViewAnimator
 
 class SelectViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     var artistName = ""
