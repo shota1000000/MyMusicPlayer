@@ -13,6 +13,7 @@
 		434AA6BD248CA7CF006A55EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434AA6BC248CA7CF006A55EF /* Main.storyboard */; };
 		434AA6BF248D2404006A55EF /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434AA6BE248D2404006A55EF /* TicketViewController.swift */; };
 		439E9EEF247EA80700A5968E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 439E9EEE247EA80700A5968E /* GoogleService-Info.plist */; };
+		43C98C8725D89DFA00815149 /* ResultMusicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C98C8625D89DFA00815149 /* ResultMusicModel.swift */; };
 		43DC4CE22478E5CE0023B570 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DC4CE12478E5CE0023B570 /* UIColorExtension.swift */; };
 		43DC4CE42478EA8F0023B570 /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DC4CE32478EA8F0023B570 /* SelectViewController.swift */; };
 		43E2619C2473FA1E001FC35B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E2619B2473FA1E001FC35B /* AppDelegate.swift */; };
@@ -33,6 +34,7 @@
 		434AA6BC248CA7CF006A55EF /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		434AA6BE248D2404006A55EF /* TicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
 		439E9EEE247EA80700A5968E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		43C98C8625D89DFA00815149 /* ResultMusicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultMusicModel.swift; sourceTree = "<group>"; };
 		43DC4CE12478E5CE0023B570 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		43DC4CE32478EA8F0023B570 /* SelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
 		43E261982473FA1E001FC35B /* MyMusicPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMusicPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,6 +104,7 @@
 		43E261B52476ACF4001FC35B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				43C98C8625D89DFA00815149 /* ResultMusicModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43C98C8725D89DFA00815149 /* ResultMusicModel.swift in Sources */,
 				434AA6BF248D2404006A55EF /* TicketViewController.swift in Sources */,
 				43E2619C2473FA1E001FC35B /* AppDelegate.swift in Sources */,
 				43DC4CE22478E5CE0023B570 /* UIColorExtension.swift in Sources */,
