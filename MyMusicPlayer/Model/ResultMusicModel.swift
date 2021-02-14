@@ -57,12 +57,8 @@ class ResultMusicModel {
                     if trackCensoredName != nil{
                         self.musicNameArray.append(trackCensoredName!)
                     }
-                    if self.musicNameArray.count == resultCount{
-                        break
-                    }
                 }
             case .failure(let error):
-                
                 print(error)
             }
         }

@@ -29,9 +29,14 @@ class SearchViewController: UIViewController,UITextFieldDelegate {
     }
     
     @IBAction func searchButton(_ sender: Any) {
+        resultMusicModel.artistNameArray.removeAll()
+        resultMusicModel.imageStringArray.removeAll()
+        resultMusicModel.musicNameArray.removeAll()
+        resultMusicModel.previewURLArray.removeAll()
         resultMusicModel.startParse(keyword: searchTextField.text!)
-        print(resultMusicModel.musicNameArray)
-        performSegue(withIdentifier: "selectVC", sender: nil)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
+            self.performSegue(withIdentifier: "selectVC", sender: nil)
+        }
     }
     //値を持たせて遷移
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
