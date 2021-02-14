@@ -154,9 +154,6 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         previewURL = previewURLArray[indexPath.row]
         imageString = imageStringArray[indexPath.row]
         
-        let urlString = previewURLArray[indexPath.row]
-        let url = URL(string: urlString)
-        
         performSegue(withIdentifier: "favoritePlayVC", sender: nil)
     }
     
@@ -166,8 +163,8 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         let cell = btn.superview?.superview as! UITableViewCell
         let row = selectTableView.indexPath(for: cell)?.row
         //Optional(行数)と出る
-        print("\(row)")
-        var messageText = UIAlertController(title: "紹介文", message: messageStringArray[row!], preferredStyle: .alert)
+        //print("\(row)")
+        let messageText = UIAlertController(title: "紹介文", message: messageStringArray[row!], preferredStyle: .alert)
         messageText.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         present(messageText, animated: true)
     }
