@@ -23,33 +23,81 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "1A1861E5-22D1-43BF-B625-6327D3530BB1"
+            uuid = "F94914C3-9C44-49A6-AAB5-91C8D0C9869B"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MyMusicPlayer/Controller/SelectTicketViewController.swift"
+            filePath = "MyMusicPlayer/Model/TicketModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
-            landmarkName = "getTicketInfo()"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "getTicketInfo(keyword:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "617EBB72-78C2-4DA8-BEBD-1F773A6EBA54"
+            uuid = "0D053285-1F9C-4993-955C-61FCE4E28632"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MyMusicPlayer/Controller/SelectTicketViewController.swift"
+            filePath = "MyMusicPlayer/Controller/TicketViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
-            landmarkName = "getTicketImage()"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "searchTicketButton(_:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5932E597-1CA2-46E8-B4B8-C660A08104FA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyMusicPlayer/Controller/TicketViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "searchTicketButton(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5932E597-1CA2-46E8-B4B8-C660A08104FA - 59bb67399d7d9cff"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyMusicPlayer.TicketViewController.searchTicketButton(Any) -&gt; ()"
+                  moduleName = "MyMusicPlayer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Shota/MyMusicPlayer/MyMusicPlayer/Controller/TicketViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "926">
+               </Location>
+               <Location
+                  uuid = "5932E597-1CA2-46E8-B4B8-C660A08104FA - 2fe672982200d749"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in MyMusicPlayer.TicketViewController.searchTicketButton(Any) -&gt; ()"
+                  moduleName = "MyMusicPlayer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Shota/MyMusicPlayer/MyMusicPlayer/Controller/TicketViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "42">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
