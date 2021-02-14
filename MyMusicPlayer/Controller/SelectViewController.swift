@@ -66,7 +66,7 @@ class SelectViewController: UIViewController,UITableViewDelegate,UITableViewData
         let artistNameLabel = cell.contentView.viewWithTag(3) as! UILabel
         
         imageView.sd_setImage(with: URL(string: imageStringArray[indexPath.row]), placeholderImage: UIImage(named: "noimage"), options: .continueInBackground, context: nil, progress: nil, completed: nil)
-        musicNameLabel.text =  musicNameArray[indexPath.row]
+        musicNameLabel.text = musicNameArray[indexPath.row]
         artistNameLabel.text = artistNameArray[indexPath.row]
         
         return cell
@@ -77,10 +77,6 @@ class SelectViewController: UIViewController,UITableViewDelegate,UITableViewData
         musicName = musicNameArray[indexPath.row]
         previewURL = previewURLArray[indexPath.row]
         imageString = imageStringArray[indexPath.row]
-        
-        let urlString = previewURLArray[indexPath.row]
-        let url = URL(string: urlString)
-        
         performSegue(withIdentifier: "playVC", sender: nil)
     }
     
@@ -89,12 +85,10 @@ class SelectViewController: UIViewController,UITableViewDelegate,UITableViewData
         let btn = sender as! UIButton
         let cell = btn.superview?.superview as! UITableViewCell
         let row = selectTableView.indexPath(for: cell)?.row
-        
         let childAutoID = ref.child("Users").childByAutoId()
         let autoID = childAutoID.key
         //ポップアップメッセージ用意
         var messageTextField: UITextField?
-        
         let message = UIAlertController(
             title: "メッセージ",
             message: "この曲の紹介文を入力してください。",
@@ -121,8 +115,8 @@ class SelectViewController: UIViewController,UITableViewDelegate,UITableViewData
                                     "music":self.musicNameArray[row!],
                                     "artist":self.artistNameArray[row!],
                                     "preview":self.previewURLArray[row!],
-                                    "message":messageTextField?.text,
-                                    "autoID":autoID] as [String : Any]
+                                    "message":messageTextField?.text as Any,
+                                    "autoID":autoID as Any] as [String : Any]
                         //Firebaseにデータを追加
                         self.ref.child("Users").child(autoID!).setValue(user)
                     }
