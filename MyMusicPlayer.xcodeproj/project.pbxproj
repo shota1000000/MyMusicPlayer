@@ -14,6 +14,7 @@
 		434AA6BF248D2404006A55EF /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434AA6BE248D2404006A55EF /* TicketViewController.swift */; };
 		439E9EEF247EA80700A5968E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 439E9EEE247EA80700A5968E /* GoogleService-Info.plist */; };
 		43C98C8725D89DFA00815149 /* ResultMusicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C98C8625D89DFA00815149 /* ResultMusicModel.swift */; };
+		43C98C8925D8D8DE00815149 /* FavoriteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C98C8825D8D8DE00815149 /* FavoriteModel.swift */; };
 		43DC4CE22478E5CE0023B570 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DC4CE12478E5CE0023B570 /* UIColorExtension.swift */; };
 		43DC4CE42478EA8F0023B570 /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DC4CE32478EA8F0023B570 /* SelectViewController.swift */; };
 		43E2619C2473FA1E001FC35B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E2619B2473FA1E001FC35B /* AppDelegate.swift */; };
@@ -35,6 +36,7 @@
 		434AA6BE248D2404006A55EF /* TicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
 		439E9EEE247EA80700A5968E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		43C98C8625D89DFA00815149 /* ResultMusicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultMusicModel.swift; sourceTree = "<group>"; };
+		43C98C8825D8D8DE00815149 /* FavoriteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteModel.swift; sourceTree = "<group>"; };
 		43DC4CE12478E5CE0023B570 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		43DC4CE32478EA8F0023B570 /* SelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
 		43E261982473FA1E001FC35B /* MyMusicPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMusicPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				43C98C8625D89DFA00815149 /* ResultMusicModel.swift */,
+				43C98C8825D8D8DE00815149 /* FavoriteModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 				43DC4CE42478EA8F0023B570 /* SelectViewController.swift in Sources */,
 				43E261B22475555E001FC35B /* SearchViewController.swift in Sources */,
 				43002832248E634500CFFF26 /* SelectTicketViewController.swift in Sources */,
+				43C98C8925D8D8DE00815149 /* FavoriteModel.swift in Sources */,
 				43E261B92476AD7B001FC35B /* PlayViewController.swift in Sources */,
 				43E261B0247400D9001FC35B /* HomeViewController.swift in Sources */,
 			);
